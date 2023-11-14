@@ -16,12 +16,18 @@ help:
 	} \
 	{ lastLine = $$0 }' $(MAKEFILE_LIST)
 
-## Install local environment
+## Install dev environment
 install-dev:
 	scripts/dev/install.sh
 
+## Start dev environment
 start-dev:
 	scripts/dev/start.sh
 
-collectstatic:
+## Stop dev environment
+stop-dev:
+	scripts/dev/stop.sh
+
+## Update django static files
+collect-statics:
 	scripts/dev/collect-statics.sh
