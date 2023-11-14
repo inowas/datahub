@@ -45,7 +45,7 @@ def shuffle(chars):
 _simple_chars = shuffle(string.ascii_letters + string.digits)
 _strong_chars = shuffle(string.ascii_letters + \
     string.digits + \
-    string.punctuation.replace("\"", '').replace("'", '').replace("`", ''))
+    string.punctuation.replace("\"", '').replace("'", '').replace("`", '').replace("$", '_'))
 
 
 def generate_env_file(args):
