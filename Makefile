@@ -24,4 +24,4 @@ start-dev:
 	scripts/dev/start.sh
 
 collectstatic:
-    scripts/dev/collect-statics.sh
+	scripts/dev/collect-statics.sh
